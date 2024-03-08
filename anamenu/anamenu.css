@@ -1,0 +1,245 @@
+/* Genel Stiller */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(black,rgb(99, 85, 85));
+    overflow-y: hidden;
+}
+
+nav {
+    background-color: #333;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+
+    width: auto;
+    z-index: 1000;
+}
+
+.menu-icon {
+    display: block;
+
+}
+
+.logo {
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.linkler ul {
+    display: flex;
+    list-style: none;
+}
+
+.linkler ul.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: auto;
+    left: 0;
+    background-color: #ff0000;
+    padding: 10px;
+    width: 100%;
+}
+
+.linkler ul li a {
+
+    margin-right: auto;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 40px;
+
+    margin-top: 10px;
+    margin-left: 30px;
+
+}
+
+.linkler>ul>li:hover {
+    text-decoration: underline;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+
+
+#yazım {
+    margin-top: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: #FCFCFC;
+    font-size: 150px;
+    margin-bottom: 0;
+}
+
+#altmetin {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: #f0f0f0;
+    font-size: 80px;
+}
+
+
+
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 3vh;
+    gap: 20px;
+
+}
+
+.whatsapp,
+.instagram,
+.wifi,
+.google {
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+    /* Düğme şeklini daire yapar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp {
+    background-image: linear-gradient(green, rgb(49, 243, 49));
+}
+
+.instagram {
+    background-image: linear-gradient(purple, red, orange);
+}
+
+.wifi {
+    background-image: linear-gradient(blue, rgb(130, 130, 218));
+}
+
+.google {
+    background-color: #ffffff;
+    /* Google logosunun renkleri */
+}
+
+.google img {
+    width: 25px;
+}
+
+.whatsapp i,
+.instagram i {
+    font-size: 2em;
+    /* İkon boyutunu artırır */
+    color: white;
+    /* İkon rengini beyaz yapar */
+}
+
+
+.active {
+    display: none;
+}
+
+.actived {
+    display: block !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    #yazım {
+        margin-top: 150px;
+        font-size: 55px;
+    }
+
+    #altmetin {
+        font-size: 30px;
+    }
+
+    #whatsapp {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hakkımda {
+        display: block;
+    }
+
+    .hakkımda:active {
+        display: none;
+    }
+
+    .linkler ul {
+
+        text-align: center;
+        justify-content: flex-start;
+        color: black !important;
+        text-decoration: underline;
+        box-sizing: border-box;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+
+        background-color: transparent !important;
+        padding: 10px;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .linkler>ul>li {
+        color: orange !important;
+        margin: 20px 10px;
+
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+        padding: 5px;
+        font-size: xx-large;
+    }
+
+    .linkler ul.active {
+        display: flex;
+        text-decoration: none;
+        text-transform: capitalize;
+
+    }
+
+    #yazım {
+        margin-top: 40px;
+        font-size: 55px;
+    }
+
+    #altmetin {
+        font-size: 30px;
+    }
+
+
+}

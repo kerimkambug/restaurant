@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trio Lounge</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .buttons {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 3vh;
+            gap: 20px;
+
+            /* Butonlar arasındaki boşluğu ayarlar */
+        }
+
+        .whatsapp,
+        .instagram,
+        .wifi,
+        .google {
+            width: 80px;
+            height: 80px;
+            border-radius: 30%;
+            /* Düğme şeklini daire yapar */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .whatsapp {
+            background-image: linear-gradient(green, rgb(49, 243, 49));
+        }
+
+        .instagram {
+            background-image: linear-gradient(purple, red, orange);
+        }
+
+        .wifi {
+            color: white;
+            background-image: linear-gradient(rgb(0, 0, 255), rgb(130, 130, 218));
+        }
+
+        .google {
+            background-color: #ffffff;
+            /* Google logosunun renkleri */
+        }
+
+        .google img {
+            width: 25px;
+        }
+
+        .whatsapp i,
+        .instagram i {
+            font-size: 2em;
+            /* İkon boyutunu artırır */
+            color: white;
+            /* İkon rengini beyaz yapar */
+        }
+    </style>
+</head>
+
+<body>
+    <footer class="footer bg-dark text-white" style="height: 100vh">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Trio Lounge</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu/menu.html">Menü</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./hakkımızda/hakkımızda.html">Hakkımızda</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid" style="position:absolute; top: 30vh;">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 style="font-size: 3rem; color: #fff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">TRIO LOUNGE
+                    </h2>
+                    <h2 style="font-size: 2rem; color: #fff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Cafe & Bistro
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto" id="password" style="display: none;">
+                    <a href="#" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-utensils mr-2"></i>
+                        TrioLounge - 2023trio
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <div class="col-auto"style="position:absolute; top: 50vh;">
+                    <a href="./menu/menu.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-utensils mr-2"></i>
+                        Menüye Git
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="whatsapp"><a href="https://wa.me/+905322045949"><i class="fab fa-whatsapp"></i></a> </div>
+            <div class="instagram"><a href="https://www.instagram.com/trio.lounge/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="google"><a href="https://g.co/kgs/PQ9TGeq"><img src="../googleicon.png" alt=""></a></div>
+            <div class="wifi" onclick="togglePassword()"><i class="fas fa-wifi"></i></div>
+
+
+        </div>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/6d3e8b0aab.js" crossorigin="anonymous"></script>
+    <script>
+        function togglePassword() {
+            const password = document.getElementById('password');
+            password.style.display = password.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
